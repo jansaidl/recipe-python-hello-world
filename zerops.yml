@@ -1,6 +1,30 @@
-helloworld:
+python38:
+  build:
+    base: [ python@3.8 ]
+    deploy: [ hello.py ]
+  run:
+    start: python3 hello.py
+python39:
+  build:
+    base: [ python@3.9 ]
+    deploy: [ hello.py ]
+  run:
+    start: python3 hello.py
+python310:
+  build:
+    base: [ python@3.10 ]
+    deploy: [ hello.py ]
+  run:
+    start: python3 hello.py
+python311:
   build:
     base: [ python@3.11 ]
+    deploy: [ hello.py ]
+  run:
+    start: python3 hello.py
+python312:
+  build:
+    base: [ python@3.12 ]
     deploy: [ hello.py ]
   run:
     start: python3 hello.py
